@@ -274,7 +274,7 @@ class Sudoku():
             currentRow = currentRow.down
         self.uncover(bestCol)
 
-#this is the main function which takes a sudoku as a 9x9 np array and returns its solution or a 9x9 array -1 if there is no solution
+#this is the main function which takes a sudoku as a 9x9 np array and returns its solution or a 9x9 array of -1 if there is no solution
 def sudoku_solver(sudoku):
     noSolution = np.array([[-1]*9]*9)
     s = Sudoku(sudoku)
